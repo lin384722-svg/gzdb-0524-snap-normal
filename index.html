@@ -53,7 +53,6 @@
   .t2-col h4 { font-size: 13px; color: var(--primary); margin-bottom: 10px; font-weight: 600; }
   .t2-item { margin-bottom: 8px; }
   .t2-item-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; font-size: 12px; }
-  .t2-item-pct.low { color: var(--red); }
   .city-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
   .city-label { width: 72px; font-size: 12px; color: var(--text-light); text-align: right; flex-shrink: 0; }
   .city-bar { flex: 1; display: flex; border-radius: 4px; overflow: hidden; height: 26px; }
@@ -91,13 +90,13 @@
   <a href="#city">⑦ 城市线级</a>
 </nav>
 
-<!-- KPI -->
+<!-- KPI 当天 0523 -->
 <div class="kpi-grid">
-  <div class="kpi-card"><div class="label">总订单</div><div class="value">991</div><div class="sub">累计（含尾单）</div></div>
-  <div class="kpi-card"><div class="label">正常班进量</div><div class="value">911</div><div class="sub">累计正常班</div></div>
-  <div class="kpi-card"><div class="label">退款率</div><div class="value">17.8%</div><div class="sub">176/991</div></div>
-  <div class="kpi-card"><div class="label">加微率</div><div class="value">67.6%</div><div class="sub">616/911</div></div>
-  <div class="kpi-card"><div class="label">主动加微率</div><div class="value">55.4%</div><div class="sub">505/911</div></div>
+  <div class="kpi-card"><div class="label">总订单</div><div class="value">317</div><div class="sub">0523 当天</div></div>
+  <div class="kpi-card"><div class="label">正常班进量</div><div class="value">301</div><div class="sub">0523 当天正常班</div></div>
+  <div class="kpi-card"><div class="label">退款率</div><div class="value">17.4%</div><div class="sub">55/317</div></div>
+  <div class="kpi-card"><div class="label">加微率</div><div class="value">60.1%</div><div class="sub">181/301</div></div>
+  <div class="kpi-card"><div class="label">主动加微率</div><div class="value">47.5%</div><div class="sub">143/301</div></div>
 </div>
 
 <!-- ① Amaze实时进量 -->
@@ -128,48 +127,45 @@
   </div>
 </div>
 
-<!-- ② 渠道对比 -->
+<!-- ② 渠道对比 当天 -->
 <div class="section" id="channel">
-  <div class="section-title">② 渠道对比<span>累计正常班 · 🔴 主动加微率&lt;大盘55.4% 或 退款率&gt;大盘17.8%</span></div>
+  <div class="section-title">② 渠道对比<span>0523当天 · 🔴 主动加微率&lt;大盘47.5% 或 退款率&gt;大盘17.4%</span></div>
   <div class="table-wrap">
     <table>
       <thead><tr><th>渠道</th><th>正常班单量</th><th>加微率</th><th>主动加微率</th><th>退款率</th></tr></thead>
       <tbody>
         <tr>
-          <td class="left">最小年轮</td><td>857</td><td>68.6%</td><td>56.5%</td><td>17.5%</td>
+          <td class="left">最小年轮</td><td>277</td><td>60.6%</td><td>48.4%</td><td>16.7%</td>
         </tr>
         <tr>
-          <td class="left">自然流</td><td>33</td>
-          <td>51.5%</td>
-          <td class="red">🔴 30.3%</td>
-          <td class="red">🔴 21.6%</td>
+          <td class="left">自然流</td><td>19</td>
+          <td>52.6%</td>
+          <td class="red">🔴 31.6%</td>
+          <td class="red">🔴 25.0%</td>
         </tr>
         <tr>
-          <td class="left">山东深山</td><td>7</td>
-          <td>42.9%</td>
-          <td class="red">🔴 42.9%</td>
-          <td>12.5%</td>
+          <td class="left">山东深山</td><td>3</td>
+          <td>66.7%</td>
+          <td>66.7%</td>
+          <td>0.0%</td>
         </tr>
         <tr>
-          <td class="left">合肥徽起</td><td>5</td>
-          <td class="red">🔴 0.0%</td>
-          <td class="red">🔴 0.0%</td>
+          <td class="left">未知渠道</td><td>2</td>
+          <td>50.0%</td>
+          <td>50.0%</td>
           <td class="red">🔴 50.0%</td>
         </tr>
-        <tr>
-          <td class="left">未知渠道</td><td>9</td><td>88.9%</td><td>88.9%</td><td>10.0%</td>
-        </tr>
         <tr style="font-weight:700; background:#f0f4fa;">
-          <td class="left">大盘</td><td>911</td><td>67.6%</td><td>55.4%</td><td>17.8%</td>
+          <td class="left">大盘</td><td>301</td><td>60.1%</td><td>47.5%</td><td>17.4%</td>
         </tr>
       </tbody>
     </table>
   </div>
 </div>
 
-<!-- ③ 年级流量达成 T+1 -->
+<!-- ③ 年级流量达成 T+1 累计 -->
 <div class="section" id="grade">
-  <div class="section-title">③ 年级流量达成 T+1<span>CSV正常班数据 · 剩余4天</span></div>
+  <div class="section-title">③ 年级流量达成 T+1<span>CSV累计正常班 · 剩余4天</span></div>
   <div class="table-wrap">
     <table>
       <thead><tr><th>年级</th><th>预估流量</th><th>总进度</th><th>剩余预期流速</th><th>实际流速</th><th>总进量</th><th>0521</th><th>0522</th><th>0523</th></tr></thead>
@@ -177,25 +173,29 @@
         <tr>
           <td class="left">新高一</td><td>2,024</td>
           <td><div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:40.1%"></div></div><span class="prog-pct">40.1%</span></div></td>
-          <td>307/天</td><td style="font-size:11px;color:#5a6a8a;">近3日均约270<br>（205/340/266）</td>
+          <td>307/天</td>
+          <td style="font-size:11px;color:#5a6a8a;">近3日均约270<br>（205/340/266）</td>
           <td>811</td><td>205</td><td>340</td><td>266</td>
         </tr>
         <tr>
           <td class="left">新高二</td><td>184</td>
           <td><div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:35.9%"></div></div><span class="prog-pct">35.9%</span></div></td>
-          <td>30/天</td><td style="font-size:11px;color:#5a6a8a;">近3日均约22<br>（18/23/25）</td>
+          <td>30/天</td>
+          <td style="font-size:11px;color:#5a6a8a;">近3日均约22<br>（18/23/25）</td>
           <td>66</td><td>18</td><td>23</td><td>25</td>
         </tr>
         <tr>
           <td class="left">新高三</td><td>92</td>
           <td><div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:37.0%"></div></div><span class="prog-pct">37.0%</span></div></td>
-          <td>15/天</td><td style="font-size:11px;color:#5a6a8a;">近3日均约11<br>（11/13/10）</td>
+          <td>15/天</td>
+          <td style="font-size:11px;color:#5a6a8a;">近3日均约11<br>（11/13/10）</td>
           <td>34</td><td>11</td><td>13</td><td>10</td>
         </tr>
         <tr style="font-weight:700; background:#f0f4fa;">
           <td class="left">合计</td><td>2,300</td>
           <td><div class="prog-wrap"><div class="prog-bar"><div class="prog-fill" style="width:39.6%"></div></div><span class="prog-pct">39.6%</span></div></td>
-          <td>349/天</td><td style="font-size:11px;color:#5a6a8a;">近3日均约304<br>（234/376/301）</td>
+          <td>349/天</td>
+          <td style="font-size:11px;color:#5a6a8a;">近3日均约304<br>（234/376/301）</td>
           <td>911</td><td>234</td><td>376</td><td>301</td>
         </tr>
       </tbody>
@@ -203,100 +203,81 @@
   </div>
 </div>
 
-<!-- ④ 渠道和年级进量 -->
+<!-- ④ 渠道和年级进量 当天 -->
 <div class="section" id="cross">
-  <div class="section-title">④ 渠道和年级进量<span>累计正常班 · 渠道×年级</span></div>
+  <div class="section-title">④ 渠道和年级进量<span>0523当天正常班 · 渠道×年级</span></div>
   <div class="table-wrap">
     <table>
       <thead><tr><th>渠道</th><th>新高一</th><th>新高二</th><th>新高三</th><th>合计</th></tr></thead>
       <tbody>
-        <tr><td class="left">最小年轮</td><td>765</td><td>59</td><td>33</td><td>857</td></tr>
-        <tr><td class="left">自然流</td><td>27</td><td>5</td><td>1</td><td>33</td></tr>
-        <tr><td class="left">未知渠道</td><td>9</td><td>0</td><td>0</td><td>9</td></tr>
-        <tr><td class="left">山东深山</td><td>7</td><td>0</td><td>0</td><td>7</td></tr>
-        <tr><td class="left">合肥徽起</td><td>3</td><td>2</td><td>0</td><td>5</td></tr>
-        <tr style="font-weight:700; background:#f0f4fa;"><td class="left">合计</td><td>811</td><td>66</td><td>34</td><td>911</td></tr>
+        <tr><td class="left">最小年轮</td><td>231</td><td>32</td><td>14</td><td>277</td></tr>
+        <tr><td class="left">自然流</td><td>17</td><td>2</td><td>0</td><td>19</td></tr>
+        <tr><td class="left">山东深山</td><td>3</td><td>0</td><td>0</td><td>3</td></tr>
+        <tr><td class="left">未知渠道</td><td>2</td><td>0</td><td>0</td><td>2</td></tr>
+        <tr style="font-weight:700; background:#f0f4fa;"><td class="left">合计</td><td>253</td><td>34</td><td>14</td><td>301</td></tr>
       </tbody>
     </table>
   </div>
 </div>
 
-<!-- ⑤ 分达人进量 -->
+<!-- ⑤ 分达人进量 当天 -->
 <div class="section" id="talent">
-  <div class="section-title">⑤ 分达人进量<span>按渠道可折叠 · 🔴 主动加微率&lt;大盘55.4% 或 退款率&gt;大盘17.8%</span></div>
+  <div class="section-title">⑤ 分达人进量<span>0523当天 · 按渠道可折叠 · 🔴 主动加微率&lt;大盘47.5% 或 退款率&gt;大盘17.4%</span></div>
 
-  <!-- 最小年轮 -->
   <details open>
-    <summary>最小年轮 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">正常班 857</span></summary>
+    <summary>最小年轮 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">0523当天正常班 277</span></summary>
     <div class="table-wrap">
       <table>
         <thead><tr><th>达人名称</th><th>正常班</th><th>加微率</th><th>主动加微率</th><th>退款率</th></tr></thead>
         <tbody>
-          <tr><td class="left">李老师讲初升高</td><td>189</td><td>70.4%</td><td>62.4%</td><td>17.5%</td></tr>
-          <tr><td class="left">千佰惠公司聂老师</td><td>152</td><td>64.5%</td><td class="red">🔴 60.5%</td><td class="red">🔴 22.8%</td></tr>
-          <tr><td class="left">李主任聊升学</td><td>90</td><td>56.7%</td><td class="red">🔴 50.0%</td><td>18.8%</td></tr>
-          <tr><td class="left">付老师睿致升学</td><td>58</td><td>60.3%</td><td class="red">🔴 50.0%</td><td>17.2%</td></tr>
-          <tr><td class="left">一线王老师讲选科</td><td>43</td><td>53.5%</td><td class="red">🔴 44.2%</td><td>15.9%</td></tr>
-          <tr><td class="left">行知老师讲规划</td><td>36</td><td>69.4%</td><td>61.1%</td><td class="red">🔴 23.7%</td></tr>
-          <tr><td class="left">王老师说选科</td><td>32</td><td>87.5%</td><td>81.3%</td><td class="red">🔴 21.2%</td></tr>
-          <tr><td class="left">田老师讲选科</td><td>30</td><td>86.7%</td><td>73.3%</td><td>3.1%</td></tr>
-          <tr><td class="left">小张老师</td><td>18</td><td>72.2%</td><td>44.4%</td><td>11.1%</td></tr>
-          <tr><td class="left">初升高规划闫老师</td><td>17</td><td>70.6%</td><td>58.8%</td><td>15.8%</td></tr>
-          <tr><td class="left">高阶二规划</td><td>17</td><td>47.1%</td><td class="red">🔴 35.3%</td><td>14.3%</td></tr>
-          <tr><td class="left">徐老师讲升学(欢喜）</td><td>16</td><td>68.8%</td><td>56.3%</td><td class="red">🔴 25.0%</td></tr>
-          <tr><td class="left">孙老师升学规划</td><td>16</td><td>56.3%</td><td class="red">🔴 50.0%</td><td>15.4%</td></tr>
-          <tr><td class="left">孙老师讲升学课堂</td><td>15</td><td>60.0%</td><td>60.0%</td><td>15.4%</td></tr>
-          <tr><td class="left">刘老师聊高中升学</td><td>14</td><td>78.6%</td><td>78.6%</td><td>11.8%</td></tr>
-          <tr><td class="left">（其余达人合计）</td><td>104</td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td class="left">李老师讲初升高</td><td>51</td><td>74.5%</td><td>56.9%</td><td>17.3%</td></tr>
+          <tr><td class="left">千佰惠公司聂老师</td><td>35</td><td>62.9%</td><td class="red">🔴 45.7%</td><td class="red">🔴 25.0%</td></tr>
+          <tr><td class="left">李主任聊升学</td><td>29</td><td>48.3%</td><td class="red">🔴 41.4%</td><td>10.3%</td></tr>
+          <tr><td class="left">田老师讲选科</td><td>23</td><td>87.0%</td><td>78.3%</td><td>4.0%</td></tr>
+          <tr><td class="left">付老师睿致升学</td><td>23</td><td>65.2%</td><td class="red">🔴 39.1%</td><td>17.4%</td></tr>
+          <tr><td class="left">一线王老师讲选科</td><td>22</td><td>50.0%</td><td class="red">🔴 36.4%</td><td>13.0%</td></tr>
+          <tr><td class="left">行知老师讲规划</td><td>12</td><td>58.3%</td><td class="red">🔴 50.0%</td><td class="red">🔴 30.8%</td></tr>
+          <tr><td class="left">王老师说选科</td><td>11</td><td>90.9%</td><td>81.8%</td><td class="red">🔴 45.5%</td></tr>
+          <tr><td class="left">高阶二规划</td><td>8</td><td>37.5%</td><td class="red">🔴 25.0%</td><td class="red">🔴 37.5%</td></tr>
+          <tr><td class="left">孙老师升学规划</td><td>6</td><td>66.7%</td><td>50.0%</td><td class="red">🔴 42.9%</td></tr>
+          <tr><td class="left">谢老师讲课堂</td><td>6</td><td>66.7%</td><td>50.0%</td><td>0.0%</td></tr>
+          <tr><td class="left">王老师升学</td><td>6</td><td>33.3%</td><td class="red">🔴 16.7%</td><td>16.7%</td></tr>
+          <tr><td class="left">王老师聊升学</td><td>6</td><td>83.3%</td><td>66.7%</td><td>0.0%</td></tr>
+          <tr><td class="left">初升高升学规划.</td><td>5</td><td>80.0%</td><td>60.0%</td><td>16.7%</td></tr>
+          <tr><td class="left">（其余达人合计）</td><td>55</td><td>—</td><td>—</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
   </details>
 
-  <!-- 自然流 -->
   <details>
-    <summary>自然流 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">正常班 33</span></summary>
+    <summary>自然流 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">0523当天正常班 19</span></summary>
     <div class="table-wrap">
       <table>
         <thead><tr><th>达人/来源</th><th>正常班</th><th>加微率</th><th>主动加微率</th><th>退款率</th></tr></thead>
         <tbody>
-          <tr><td class="left">自然流（无达人）</td><td>33</td><td>51.5%</td><td class="red">🔴 30.3%</td><td class="red">🔴 21.6%</td></tr>
+          <tr><td class="left">自然流（无代理商达人）</td><td>19</td><td>52.6%</td><td class="red">🔴 31.6%</td><td class="red">🔴 25.0%</td></tr>
         </tbody>
       </table>
     </div>
   </details>
 
-  <!-- 山东深山 -->
   <details>
-    <summary>山东深山 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">正常班 7</span></summary>
+    <summary>山东深山 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">0523当天正常班 3</span></summary>
     <div class="table-wrap">
       <table>
         <thead><tr><th>达人名称</th><th>正常班</th><th>加微率</th><th>主动加微率</th><th>退款率</th></tr></thead>
         <tbody>
-          <tr><td class="left">升学规划徐老师</td><td>4</td><td>50.0%</td><td class="red">🔴 50.0%</td><td>0.0%</td></tr>
-          <tr><td class="left">其他</td><td>3</td><td>33.3%</td><td class="red">🔴 33.3%</td><td>25.0%</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </details>
-
-  <!-- 合肥徽起 -->
-  <details>
-    <summary>合肥徽起 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">正常班 5</span></summary>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>达人名称</th><th>正常班</th><th>加微率</th><th>主动加微率</th><th>退款率</th></tr></thead>
-        <tbody>
-          <tr><td class="left">合肥徽起（合计）</td><td>5</td><td class="red">🔴 0.0%</td><td class="red">🔴 0.0%</td><td class="red">🔴 50.0%</td></tr>
+          <tr><td class="left">山东深山（合计）</td><td>3</td><td>66.7%</td><td>66.7%</td><td>0.0%</td></tr>
         </tbody>
       </table>
     </div>
   </details>
 </div>
 
-<!-- ⑥ T+2活跃率 -->
+<!-- ⑥ T+2活跃率 累计 -->
 <div class="section" id="t2">
-  <div class="section-title">⑥ T+2活跃率<span>正常班用户</span></div>
+  <div class="section-title">⑥ T+2活跃率<span>累计正常班</span></div>
   <div class="t2-grid">
     <div class="t2-col">
       <h4>按渠道</h4>
@@ -317,7 +298,7 @@
         <div class="prog-bar"><div class="prog-fill orange" style="width:14.3%"></div></div>
       </div>
       <div class="t2-item">
-        <div class="t2-item-header"><span>合肥徽起</span><span>0/5 = <b class="t2-item-pct low">0.0%</b></span></div>
+        <div class="t2-item-header"><span>合肥徽起</span><span>0/5 = <b style="color:var(--red)">0.0%</b></span></div>
         <div class="prog-bar"><div class="prog-fill red" style="width:0%"></div></div>
       </div>
       <div class="t2-item" style="margin-top:10px;border-top:1px solid #dce4f0;padding-top:8px;">
@@ -343,9 +324,9 @@
   </div>
 </div>
 
-<!-- ⑦ 城市线级分布 -->
+<!-- ⑦ 城市线级分布 累计 -->
 <div class="section" id="city">
-  <div class="section-title">⑦ 城市线级分布<span>正常班 911 人</span></div>
+  <div class="section-title">⑦ 城市线级分布<span>累计正常班 911 人</span></div>
   <div class="city-legend">
     <div class="city-legend-item"><div class="city-legend-dot" style="background:#1a3a6b"></div>一线城市</div>
     <div class="city-legend-item"><div class="city-legend-dot" style="background:#2a5298"></div>新一线</div>
@@ -355,7 +336,6 @@
     <div class="city-legend-item"><div class="city-legend-dot" style="background:#c5d5eb"></div>五线城市</div>
     <div class="city-legend-item"><div class="city-legend-dot" style="background:#dce4f0"></div>其他</div>
   </div>
-
   <div class="city-row">
     <div class="city-label">总计</div>
     <div class="city-bar">
@@ -368,7 +348,6 @@
       <div class="city-seg" style="background:#dce4f0;width:0.3%;color:#555"></div>
     </div>
   </div>
-
   <div style="margin-top:12px;">
     <div class="table-wrap">
       <table>
@@ -388,7 +367,8 @@
 </div>
 
 <div style="text-align:center;padding:20px;color:#9ab4d8;font-size:12px;">
-  数据截至 2026-05-23 · 正常班口径：当前在班状态=正常班（含退费不退课）· 退款口径：订单状态=已关闭
+  KPI/渠道/分达人/渠道×年级 口径：0523当天正常班 · T+2/城市线级 口径：累计正常班<br>
+  退款口径：订单状态=已关闭 · 正常班口径：当前在班状态=正常班（含退费不退课）
 </div>
 
 </body>
