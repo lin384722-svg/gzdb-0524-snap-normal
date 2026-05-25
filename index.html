@@ -45,9 +45,8 @@
   details summary { cursor: pointer; padding: 10px 14px; font-weight: 600; color: var(--primary); font-size: 13px; list-style: none; user-select: none; display: flex; align-items: center; }
   details summary::before { content: '▶'; margin-right: 8px; font-size: 10px; transition: transform 0.2s; }
   details[open] summary::before { transform: rotate(90deg); }
-  details .table-wrap { border-radius: 0 0 8px 8px; box-shadow: none; display: block; }
-  details table { width: 100%; display: table; }
-  details tbody, details thead, details tr, details th, details td { display: revert; }
+  details .table-wrap { border-radius: 0 0 8px 8px; box-shadow: none; }
+  details table { width: 100%; }
   .t2-grid { display: flex; gap: 12px; flex-wrap: wrap; }
   .t2-col { flex: 1 1 200px; background: var(--card-bg); border-radius: 8px; padding: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
   .t2-col h4 { font-size: 13px; color: var(--primary); margin-bottom: 10px; font-weight: 600; }
@@ -249,7 +248,7 @@
   </details>
 
   <details>
-    <summary>自然流 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">0524当天正常班 3</span>
+    <summary>自然流 <span style="font-weight:400;color:#5a6a8a;font-size:12px;margin-left:8px;">0524当天正常班 3</span></summary>
     <div class="table-wrap">
       <table>
         <thead><tr><th>达人名称</th><th>正常班</th><th>加微率</th><th>主动加微率</th><th>退款率</th></tr></thead>
